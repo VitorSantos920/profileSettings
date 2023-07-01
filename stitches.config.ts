@@ -13,7 +13,7 @@ export const stitches = createStitches({
     },
 
     fonts: {
-      title: 'Heebo, sans-serif',
+      heebo: 'Heebo, sans-serif',
     },
 
     fontSizes: {
@@ -42,7 +42,10 @@ const injectGlobalStyle = stitches.globalCss({
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: '100vh',
+    fontFamily: '$heebo',
   },
+
+  '.flex': { display: 'flex' },
 });
 
 injectGlobalStyle();
