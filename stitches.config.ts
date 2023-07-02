@@ -7,7 +7,7 @@ export const stitches = createStitches({
       gray200: '#38343D',
       gray300: '#797085',
       gray400: '#F4EFFA',
-      gray500: '#F4EFFA',
+      gray500: '#FDFCFE',
       red: '#AA2222',
       gradient: 'linear-gradient(to right, #935FD3, #9245F1)',
     },
@@ -17,9 +17,10 @@ export const stitches = createStitches({
     },
 
     fontSizes: {
-      title: 18,
-      textMd: 16,
-      textSm: 14,
+      title: '1.125rem',
+      textMd: '1rem',
+      textSm: '0.875rem',
+      textXs: '0.75rem',
     },
 
     fontWeights: {
@@ -43,6 +44,7 @@ const injectGlobalStyle = stitches.globalCss({
     justifyContent: 'center',
     minHeight: '100vh',
     fontFamily: '$heebo',
+    margin: '1.75rem 0',
   },
 
   '.flex': { display: 'flex' },
